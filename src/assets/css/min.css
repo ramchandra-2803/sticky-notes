@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --body-font: "Baloo Paaji 2", cursive;
+
+  /* color */
+  --light: #f7f7f7;
+  --dark: #08070d;
+  --white: #fff;
+  --black: #000;
+  --blue: #2d55ba;
+  --dark-text-color: #27303a;
+  --light-text-color: rgba(255, 255, 255, 0.8);
+
+  /* Sticky note's Theme's */
+
+  --default: transparent;
+  /* Light */
+  --congoPink: #f28b82;
+  --mango: #fbbc04;
+  --corn: #fff475;
+  --mindaro: #ccff90;
+  --magicMint: #a7ffeb;
+  --powderBlue: #cbf0f8;
+  --babyBlueEyes: #aecbfa;
+  --mauve: #d7aefb;
+  --pinkLace: #fdcfe8;
+  --desertSand: #e6c9a8;
+  --cultured: #e8eaed;
+
+  /* Dark */
+  --caputMortuum: #5c2b29;
+  --fieldDrab: #614a19;
+  --antiqueBronze: #635d19;
+  --lincolnGreen: #345920;
+  --deepJungleGreen: #16504b;
+  --darkSlateGray: #2d555e;
+  --prussianBlue: #1e3a5f;
+  --russianViolet: #42275e;
+  --tyrianPurple: #5b2245;
+  --cafeNoir: #442f19;
+  --cnyx: #3c3f43;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font: 400 1rem/1.5rem var(--body-font);
+  overflow: hidden auto;
+  color: var(--dark);
+  background: var(--white);
+}
+body.dark {
+  color: var(--white);
+  background: var(--black);
+}
+
+hr {
+  margin: 0.5rem auto;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+hr:not([size]) {
+  height: 1px;
+}
+
+[contentEditable] {
+  outline: 0;
+}
+
+@import url(./style.css);
